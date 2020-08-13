@@ -1,0 +1,162 @@
+html {
+  margin: 0;
+  height: 100%;
+  min-width: 700px;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  min-width: 700px;
+}
+
+header {
+  width: 100%;
+  background-color: #1b262c;
+  color: #ffffff;
+  position: fixed;
+  top: 0;
+}
+
+#store-name {
+  padding: 40px;
+  font-size: 2em;
+  font-family: 'Shrikhand', cursive;
+  /*force the title text not move, get the idea from https://blog.csdn.net/jethai/article/details/52345168*/
+  white-space: nowrap;
+}
+
+#sidebar {
+  /*keep it on the screen*/
+  position: fixed;
+  /*push the whole sidebar down*/
+  top: 126px;
+  background-color: #0f4c75;
+  /*flexbox*/
+  display: flex;
+  flex-direction: column;
+  /*font*/
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  /*border*/
+  border-top: 3px solid #1b262c;
+  border-left: 3px solid #1b262c;
+  border-right: 3px solid #1b262c;
+}
+
+/*each navigation button*/
+#sidebar div {
+  width: 250px;
+  border-bottom: 3px solid #1b262c;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#sidebar div :hover {
+  cursor: pointer;
+}
+
+.itemswrapper {
+  /*give space for header and sidebar, learn from youtube*/
+  border-top: 127px solid #3282b8;
+  border-left: 276px solid #3282b8;
+  border-bottom: 50px solid #3282b8;
+  padding: 50px;
+  background-color: #3282b8;
+  /*use flex box model to manage the cards*/
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+
+.item {
+  margin: 30px 30px 0 30px;
+  border: 3px solid #1b262c;
+  background-color: #0f4c75;
+  /*use flex box model to manage each card's components*/
+  display: flex;
+  flex-flow: column;
+  /*set each card's width*/
+  width: 300px;
+}
+
+/*title*/
+.item h1 {
+  /*font*/
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  color: #ffffff;
+  text-align: start;
+  /*box*/
+  margin: 0;
+  padding: 0 0 5px 10px;
+  border-bottom: 3px solid #1b262c;
+}
+
+.item img {
+  height: 300px;
+}
+
+/*description*/
+.item p {
+  /*font*/
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2em;
+  color: #ffffff;
+  text-align: center;
+  /*box*/
+  margin: 0;
+  padding: 10px 10px 10px 0;
+  border-top: 3px solid #1b262c;
+  /*to push the price tag down*/
+  height: 80px;
+}
+
+/*price tag*/
+.item h2 {
+  /*font*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+  color: #ffffff;
+  text-align: center;
+  /*box*/
+  margin: 0;
+  padding: 0 10px 10px 0;
+}
+
+.filler {
+  width: 300px;
+  margin: 30px 33px 0 33px;
+  padding: 0;
+}
+
+footer {
+  background-color: #1b262c;
+  color: #ffffff;
+  /*box*/
+  padding: 30px 30px;
+  /*make its children flex*/
+  display: flex;
+  flex-direction: row;
+}
+
+#copyright {
+  width: 40%;
+}
+
+#app-wrapper {
+  height: 50px;
+  width: 60%;
+  /*use flex box to manage icons*/
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/*for fontawesome*/
+i {
+  text-align: center;
+  padding: 10px 30px;
+  color: #ffffff;
+}
