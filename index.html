@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>WEB222 Store</title>
-    <link rel="stylesheet" href="./style.css" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Shrikhand&family=Open+Sans+Condensed:ital,wght@1,300&family=Oswald:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
 
-  <body>
-    <header>
-      <div id="store-name">
-        LEON'S PRIVATE KITCHEN
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WEB222 Store</title>
+  <link rel="stylesheet" href="./style.css" type="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Shrikhand&family=Open+Sans+Condensed:ital,wght@1,300&family=Oswald:wght@500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <header>
+    <div id="store-name">
+      LEON'S PRIVATE KITCHEN
+    </div>
+
+    <div id="nav">
+      <div id="home">HOME</div>
+
+      <div id="contact">
+        <a href="contact.html">CONTACT US</a>
       </div>
-    </header>
 
+    </div>
+  </header>
+
+  <div id="sidebarNav">
     <div id="sidebar">
       <div id="all">
         <p>ALL</p>
@@ -46,237 +54,238 @@
         <p>DESSERT</p>
       </div>
     </div>
+  </div>
 
-    <!-- places to put items, will be rendered based on selection -->
-    <div class="itemswrapper">
-      <div class="item appetizer">
-        <h1>Miso Soup</h1>
-        <img src="./images/misoSoup.jpg" alt="Miso Soup" />
-        <p>
-          Traditional Japanese soup consisting of a dashi stock into which softened miso paste is
-          mixed.
-        </p>
-        <h2>$ 3.99</h2>
-      </div>
-      <div class="item appetizer">
-        <h1>Mushroom Salad</h1>
-        <img src="./images/mushroomSalad.jpg" alt="Mushroom Salad" />
-        <p>
-          Packed with mushrooms and loads of crunchy colorful ingredients, this salad is perfect at
-          picnics and parties.
-        </p>
-        <h2>$ 4.99</h2>
-      </div>
-      <div class="item appetizer">
-        <h1>Vegetable Salad</h1>
-        <img src="./images/vegetableSalad.jpg" alt="vegetableSalad" />
-        <p>
-          Toss together the cucumber, tomato, onion, pepper, radish, jicama, and lettuce in a large
-          salad bowl.
-        </p>
-        <h2>$ 3.99</h2>
-      </div>
-      <div class="item appetizer">
-        <h1>Egg Salad</h1>
-        <img src="./images/eggSalad.jpg" alt="Egg Salad" />
-        <p>
-          Boiled eggs, mayonnaise, a touch of a mustard and elegant toppings with dill and chives to
-          add that extra touch of perfection.
-        </p>
-        <h2>$ 4.99</h2>
-      </div>
-      <div class="item appetizer">
-        <h1>Beef Salad</h1>
-        <img src="./images/beefSashimi.jpg" alt="Beef Sashimi" />
-        <p>
-          We're always saying that salads don't have to be boring or only eaten on a diet and we
-          prove it once again here.
-        </p>
-        <h2>$ 6.99</h2>
-      </div>
-      <div class="item sashimi">
-        <h1>Salmon Sashimi</h1>
-        <img src="./images/salmonSashimi.jpg" alt="Salmon Sashimi" />
-        <p>
-          In a small bowl combine the mayonnaise, yogurt, celery, capers and pepper. Mix well and
-          then add to salmon and toss.
-        </p>
-        <h2>$ 6.99</h2>
-      </div>
-      <div class="item sashimi">
-        <h1>Sashimi Combo</h1>
-        <img src="./images/sashimiCombo.jpg" alt="Sashimi Combo" />
-        <p>3 pcs tuna, 3 pcs salmon, 3 pcs white fish.Come with miso soup and house salad.</p>
-        <h2>$ 19.99</h2>
-      </div>
-      <div class="item sashimi">
-        <h1>Sashimi Lover</h1>
-        <img src="./images/sashimiLover.jpg" alt="Sashimi Lover" />
-        <p>
-          4 pieces tuna, 4 pieces fresh salmon, 4 pieces red snapper, 4 pieces yellow tail, 4 pieces
-          abako tuna, 4 pieces escolar, 4 pieces octopus
-        </p>
-        <h2>$ 39.99</h2>
-      </div>
-      <div class="item sashimi">
-        <h1>Urchin Sashimi</h1>
-        <img src="./images/urchinSashimi.jpg" alt="Urchin Sashimi" />
-        <p>
-          Uni ranges in color from rich gold to light yellow, and has a creamy consistency that some
-          love and is off-putting to others
-        </p>
-        <h2>$ 59.99</h2>
-      </div>
-      <div class="item sushi">
-        <h1>Assorted Sushi</h1>
-        <img src="./images/assortSushi.jpg" alt="Assorted Sushi" />
-        <p>Served with miso soup. 7 pcs chef's choice nigiri, 6 pcs salmon or tuna roll</p>
-        <h2>$ 15.99</h2>
-      </div>
-      <div class="item sushi">
-        <h1>Avocado Sushi</h1>
-        <img src="./images/avocadoSushi.jpg" alt="Avocado Sushi" />
-        <p>
-          Team creamy avocado with your favorite crunchy vegetables -- we used julienned cucumbers
-          and carrots
-        </p>
-        <h2>$ 7.99</h2>
-      </div>
-      <div class="item sushi">
-        <h1>Grill Sushi</h1>
-        <img src="./images/grillSushi.jpg" alt="Grill Sushi" />
-        <p>
-          Torched sushi is warm rectangle sushi made by pressing blocks of rice and sushi toppings
-          in a special mould
-        </p>
-        <h2>$ 12.99</h2>
-      </div>
-      <div class="item sushi">
-        <h1>Sushi Boat</h1>
-        <img src="./images/sushiBoat.jpg" alt="Sushi Boat" />
-        <p>
-          This large sushi boat is nothing short of a great way to impress your dinner guest, as you
-          serve your sushi creations or anything else you desire.
-        </p>
-        <h2>$ 59.99</h2>
-      </div>
-      <div class="item sushi">
-        <h1>Unaki Sushi</h1>
-        <img src="./images/unakiSushi.jpg" alt="Unaki Sushi" />
-        <p>Unakyu is a common expression used for sushi containing eel & cucumber.</p>
-        <h2>$ 19.99</h2>
-      </div>
-      <div class="item sushi">
-        <h1>Sushi Sashimi Combo</h1>
-        <img src="./images/sushiSashimiCombo.jpg" alt="Sushi Sashimi Combo" />
-        <p>
-          Appetizer sashimi & 2 pcs salmon, 2 pcs tuna, 2 pcs ebi, one choice of chef`s
-          recommendation rolls
-        </p>
-        <h2>$ 19.99</h2>
-      </div>
-      <div class="item main">
-        <h1>Assorted Sashimi Rice Bowl</h1>
-        <img src="./images/assortSashimiRiceBowl.jpg" alt="Assorted Sashimi Rice Bowl" />
-        <p>Steamed rice with assorted sashimi. The specis are up to your choices.</p>
-        <h2>$ 15.99</h2>
-      </div>
-      <div class="item main">
-        <h1>Sashimi Rice Bowl</h1>
-        <img src="./images/sashimiRiceBowl.jpg" alt="Sashimi Rice Bowl" />
-        <p>Steamed rice with assorted sashimi. The specis are up to your choices.</p>
-        <h2>$ 13.99</h2>
-      </div>
-      <div class="item main">
-        <h1>Unaki Don</h1>
-        <img src="./images/unakiDon.jpg" alt="Unaki Don" />
-        <p>
-          It consists of a donburi type large bowl filled with steamed white rice, and topped with
-          fillets of eel (unagi)
-        </p>
-        <h2>$ 16.99</h2>
-      </div>
-      <div class="item main">
-        <h1>Chicken Noodle</h1>
-        <img src="./images/chickenNoodle.jpg" alt="Chinken Noodle" />
-        <p>
-          This healthy, Japanese-inspired chicken noodle soup recipe is made with udon noodles and
-          gets a hit of umami flavor from a swirl of miso at the end
-        </p>
-        <h2>$ 15.99</h2>
-      </div>
-      <div class="item main">
-        <h1>Pork Noodle</h1>
-        <img src="./images/porkNoodle.jpg" alt="Pork Noodle" />
-        <p>Enjoy our famous pork noodle, come with pork bone soup and appetizer dishes.</p>
-        <h2>$ 15.99</h2>
-      </div>
-      <div class="item main">
-        <h1>Sea Food Noodle</h1>
-        <img src="./images/seafoodNoodle.jpg" alt="Sea Food Noodle" />
-        <p>Enjoy our famous assorted sea food noodle, come with miso soup and selected appetizer</p>
-        <h2>$ 15.99</h2>
-      </div>
-      <div class="item dessert">
-        <h1>Chocolate Cheese Cake</h1>
-        <img src="./images/chocolateCheeseCake.jpg" alt="Chocolate Cheese Cake" />
-        <p>
-          Everyone’s a chocolate lover when it comes to this special dessert. It melts in your
-          mouth, and it’s very smooth and fudgy.
-        </p>
-        <h2>$ 18.99</h2>
-      </div>
-      <div class="item dessert">
-        <h1>The Iceberg</h1>
-        <img src="./images/iceberg.jpg" alt="Iceberg Icecream" />
-        <p>
-          Meringue sundaes can be filled with any flavor of gelato or ice cream, and different
-          sauces, nuts or fresh fruit
-        </p>
-        <h2>$ 8.99</h2>
-      </div>
-      <div class="item dessert">
-        <h1>Strawberry Sundae</h1>
-        <img src="./images/strawberrySundae.jpg" alt="Strawberry Sundae" />
-        <p>
-          Lime adds a delicious tang to this easy dessert. I'll never eat plain vanilla ice cream
-          again!
-        </p>
-        <h2>$ 8.99</h2>
-      </div>
-      <div class="item dessert">
-        <h1>Vanilla Cone</h1>
-        <img src="./images/vanillaCone.jpg" alt="Vanilla Cone" />
-        <p>Children love this treat, which is not as messy as a piece of cake.</p>
-        <h2>$ 5.99</h2>
-      </div>
-
-      <!--to make the last row align left-->
-      <i class="filler"></i>
-      <i class="filler"></i>
-      <i class="filler"></i>
+  <!-- places to put items, will be rendered based on selection -->
+  <div class="itemswrapper">
+    <div class="item appetizer">
+      <h1>Miso Soup</h1>
+      <img src="./images/misoSoup.jpg" alt="Miso Soup" />
+      <p>
+        Traditional Japanese soup consisting of a dashi stock into which softened miso paste is
+        mixed.
+      </p>
+      <h2>$ 3.99</h2>
+    </div>
+    <div class="item appetizer">
+      <h1>Mushroom Salad</h1>
+      <img src="./images/mushroomSalad.jpg" alt="Mushroom Salad" />
+      <p>
+        Packed with mushrooms and loads of crunchy colorful ingredients, this salad is perfect at
+        picnics and parties.
+      </p>
+      <h2>$ 4.99</h2>
+    </div>
+    <div class="item appetizer">
+      <h1>Vegetable Salad</h1>
+      <img src="./images/vegetableSalad.jpg" alt="vegetableSalad" />
+      <p>
+        Toss together the cucumber, tomato, onion, pepper, radish, jicama, and lettuce in a large
+        salad bowl.
+      </p>
+      <h2>$ 3.99</h2>
+    </div>
+    <div class="item appetizer">
+      <h1>Egg Salad</h1>
+      <img src="./images/eggSalad.jpg" alt="Egg Salad" />
+      <p>
+        Boiled eggs, mayonnaise, a touch of a mustard and elegant toppings with dill and chives to
+        add that extra touch of perfection.
+      </p>
+      <h2>$ 4.99</h2>
+    </div>
+    <div class="item appetizer">
+      <h1>Beef Salad</h1>
+      <img src="./images/beefSashimi.jpg" alt="Beef Sashimi" />
+      <p>
+        We're always saying that salads don't have to be boring or only eaten on a diet and we
+        prove it once again here.
+      </p>
+      <h2>$ 6.99</h2>
+    </div>
+    <div class="item sashimi">
+      <h1>Salmon Sashimi</h1>
+      <img src="./images/salmonSashimi.jpg" alt="Salmon Sashimi" />
+      <p>
+        In a small bowl combine the mayonnaise, yogurt, celery, capers and pepper. Mix well and
+        then add to salmon and toss.
+      </p>
+      <h2>$ 6.99</h2>
+    </div>
+    <div class="item sashimi">
+      <h1>Sashimi Combo</h1>
+      <img src="./images/sashimiCombo.jpg" alt="Sashimi Combo" />
+      <p>3 pcs tuna, 3 pcs salmon, 3 pcs white fish.Come with miso soup and house salad.</p>
+      <h2>$ 19.99</h2>
+    </div>
+    <div class="item sashimi">
+      <h1>Sashimi Lover</h1>
+      <img src="./images/sashimiLover.jpg" alt="Sashimi Lover" />
+      <p>
+        4 pieces tuna, 4 pieces fresh salmon, 4 pieces red snapper, 4 pieces yellow tail, 4 pieces
+        abako tuna, 4 pieces escolar, 4 pieces octopus
+      </p>
+      <h2>$ 39.99</h2>
+    </div>
+    <div class="item sashimi">
+      <h1>Urchin Sashimi</h1>
+      <img src="./images/urchinSashimi.jpg" alt="Urchin Sashimi" />
+      <p>
+        Uni ranges in color from rich gold to light yellow, and has a creamy consistency that some
+        love and is off-putting to others
+      </p>
+      <h2>$ 59.99</h2>
+    </div>
+    <div class="item sushi">
+      <h1>Assorted Sushi</h1>
+      <img src="./images/assortSushi.jpg" alt="Assorted Sushi" />
+      <p>Served with miso soup. 7 pcs chef's choice nigiri, 6 pcs salmon or tuna roll</p>
+      <h2>$ 15.99</h2>
+    </div>
+    <div class="item sushi">
+      <h1>Avocado Sushi</h1>
+      <img src="./images/avocadoSushi.jpg" alt="Avocado Sushi" />
+      <p>
+        Team creamy avocado with your favorite crunchy vegetables -- we used julienned cucumbers
+        and carrots
+      </p>
+      <h2>$ 7.99</h2>
+    </div>
+    <div class="item sushi">
+      <h1>Grill Sushi</h1>
+      <img src="./images/grillSushi.jpg" alt="Grill Sushi" />
+      <p>
+        Torched sushi is warm rectangle sushi made by pressing blocks of rice and sushi toppings
+        in a special mould
+      </p>
+      <h2>$ 12.99</h2>
+    </div>
+    <div class="item sushi">
+      <h1>Sushi Boat</h1>
+      <img src="./images/sushiBoat.jpg" alt="Sushi Boat" />
+      <p>
+        This large sushi boat is nothing short of a great way to impress your dinner guest, as you
+        serve your sushi creations or anything else you desire.
+      </p>
+      <h2>$ 59.99</h2>
+    </div>
+    <div class="item sushi">
+      <h1>Unaki Sushi</h1>
+      <img src="./images/unakiSushi.jpg" alt="Unaki Sushi" />
+      <p>Unakyu is a common expression used for sushi containing eel & cucumber.</p>
+      <h2>$ 19.99</h2>
+    </div>
+    <div class="item sushi">
+      <h1>Sushi Sashimi Combo</h1>
+      <img src="./images/sushiSashimiCombo.jpg" alt="Sushi Sashimi Combo" />
+      <p>
+        Appetizer sashimi & 2 pcs salmon, 2 pcs tuna, 2 pcs ebi, one choice of chef`s
+        recommendation rolls
+      </p>
+      <h2>$ 19.99</h2>
+    </div>
+    <div class="item main">
+      <h1>Assorted Sashimi Rice Bowl</h1>
+      <img src="./images/assortSashimiRiceBowl.jpg" alt="Assorted Sashimi Rice Bowl" />
+      <p>Steamed rice with assorted sashimi. The specis are up to your choices.</p>
+      <h2>$ 15.99</h2>
+    </div>
+    <div class="item main">
+      <h1>Sashimi Rice Bowl</h1>
+      <img src="./images/sashimiRiceBowl.jpg" alt="Sashimi Rice Bowl" />
+      <p>Steamed rice with assorted sashimi. The specis are up to your choices.</p>
+      <h2>$ 13.99</h2>
+    </div>
+    <div class="item main">
+      <h1>Unaki Don</h1>
+      <img src="./images/unakiDon.jpg" alt="Unaki Don" />
+      <p>
+        It consists of a donburi type large bowl filled with steamed white rice, and topped with
+        fillets of eel (unagi)
+      </p>
+      <h2>$ 16.99</h2>
+    </div>
+    <div class="item main">
+      <h1>Chicken Noodle</h1>
+      <img src="./images/chickenNoodle.jpg" alt="Chinken Noodle" />
+      <p>
+        This healthy, Japanese-inspired chicken noodle soup recipe is made with udon noodles and
+        gets a hit of umami flavor from a swirl of miso at the end
+      </p>
+      <h2>$ 15.99</h2>
+    </div>
+    <div class="item main">
+      <h1>Pork Noodle</h1>
+      <img src="./images/porkNoodle.jpg" alt="Pork Noodle" />
+      <p>Enjoy our famous pork noodle, come with pork bone soup and appetizer dishes.</p>
+      <h2>$ 15.99</h2>
+    </div>
+    <div class="item main">
+      <h1>Sea Food Noodle</h1>
+      <img src="./images/seafoodNoodle.jpg" alt="Sea Food Noodle" />
+      <p>Enjoy our famous assorted sea food noodle, come with miso soup and selected appetizer</p>
+      <h2>$ 15.99</h2>
+    </div>
+    <div class="item dessert">
+      <h1>Chocolate Cheese Cake</h1>
+      <img src="./images/chocolateCheeseCake.jpg" alt="Chocolate Cheese Cake" />
+      <p>
+        Everyone’s a chocolate lover when it comes to this special dessert. It melts in your
+        mouth, and it’s very smooth and fudgy.
+      </p>
+      <h2>$ 18.99</h2>
+    </div>
+    <div class="item dessert">
+      <h1>The Iceberg</h1>
+      <img src="./images/iceberg.jpg" alt="Iceberg Icecream" />
+      <p>
+        Meringue sundaes can be filled with any flavor of gelato or ice cream, and different
+        sauces, nuts or fresh fruit
+      </p>
+      <h2>$ 8.99</h2>
+    </div>
+    <div class="item dessert">
+      <h1>Strawberry Sundae</h1>
+      <img src="./images/strawberrySundae.jpg" alt="Strawberry Sundae" />
+      <p>
+        Lime adds a delicious tang to this easy dessert. I'll never eat plain vanilla ice cream
+        again!
+      </p>
+      <h2>$ 8.99</h2>
+    </div>
+    <div class="item dessert">
+      <h1>Vanilla Cone</h1>
+      <img src="./images/vanillaCone.jpg" alt="Vanilla Cone" />
+      <p>Children love this treat, which is not as messy as a piece of cake.</p>
+      <h2>$ 5.99</h2>
     </div>
 
-    <footer>
-      <div id="copyright">
-        <p>&copy; 2020. Leon Liu. All rights reserved.</p>
-      </div>
-      <div id="app-wrapper">
-        <a href="http://Facebook.com" target="_blank"
-          ><i class="fa fa-facebook fa-2x" aria-hidden="true"></i
-        ></a>
-        <a href="http://twitter.com" target="_blank"
-          ><i class="fa fa-twitter fa-2x" aria-hidden="true"></i
-        ></a>
-        <a href="http://instagram.com" target="_blank"
-          ><i class="fa fa-instagram fa-2x" aria-hidden="true"></i
-        ></a>
-        <a href="http://wechat.com" target="_blank"
-          ><i class="fa fa-weixin fa-2x" aria-hidden="true"></i
-        ></a>
-      </div>
-    </footer>
+    <!--to make the last row align left-->
+    <i class="filler"></i>
+    <i class="filler"></i>
+    <i class="filler"></i>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <footer>
+    <div id="copyright">
+      <p>All rights reserved <br> &copy; 2020. Leon Liu </p>
+    </div>
+
+    <div id="app-wrapper">
+      <a href="http://Facebook.com" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+      <a href="http://twitter.com" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+      <a href="http://instagram.com" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+      <a href="http://wechat.com" target="_blank"><i class="fa fa-weixin fa-2x" aria-hidden="true"></i></a>
+    </div>
+
+    <form id="subscribe" action="https://formspree.io/xeqrdrvr" method="post">
+      <input id="subEmail" type="email" name="email" pattern="[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}"
+        autocomplete="email" placeholder="username@email.com" required>
+      <button id="subButton">Subscribe</button>
+    </form>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

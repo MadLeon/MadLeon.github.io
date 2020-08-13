@@ -1,12 +1,12 @@
-window.onload = function() {
-  document.querySelector('#all').onclick = function() {
+window.onload = function () {
+  document.querySelector('#all').onclick = function () {
     // select all items and change their display to flex
     document.querySelectorAll('.item').forEach(v => {
       v.style.display = 'flex';
     });
   };
 
-  document.querySelector('#appetizer').onclick = function() {
+  document.querySelector('#appetizer').onclick = function () {
     // select all items and change their display to none
     document.querySelectorAll('.item').forEach(v => {
       v.style.display = 'none';
@@ -17,7 +17,7 @@ window.onload = function() {
     });
   };
 
-  document.querySelector('#sashimi').onclick = function() {
+  document.querySelector('#sashimi').onclick = function () {
     // select all items and change their display to none
     document.querySelectorAll('.item').forEach(v => {
       v.style.display = 'none';
@@ -28,7 +28,7 @@ window.onload = function() {
     });
   };
 
-  document.querySelector('#sushi').onclick = function() {
+  document.querySelector('#sushi').onclick = function () {
     // select all items and change their display to none
     document.querySelectorAll('.item').forEach(v => {
       v.style.display = 'none';
@@ -39,7 +39,7 @@ window.onload = function() {
     });
   };
 
-  document.querySelector('#main').onclick = function() {
+  document.querySelector('#main').onclick = function () {
     // select all items and change their display to none
     document.querySelectorAll('.item').forEach(v => {
       v.style.display = 'none';
@@ -50,7 +50,7 @@ window.onload = function() {
     });
   };
 
-  document.querySelector('#dessert').onclick = function() {
+  document.querySelector('#dessert').onclick = function () {
     // select all items and change their display to none
     document.querySelectorAll('.item').forEach(v => {
       v.style.display = 'none';

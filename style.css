@@ -1,162 +1,594 @@
-html {
-  margin: 0;
-  height: 100%;
-  min-width: 700px;
+@media (min-width: 1000px) {
+  html {
+    margin: 0;
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    height: 100%;
+    background-color: #3282b8;
+  }
+
+  header {
+    width: 100%;
+    background-color: #1b262c;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    display: flex;
+  }
+
+  #store-name {
+    width: 60%;
+    padding: 40px;
+    font-size: 2em;
+    font-family: 'Shrikhand', cursive;
+    /*force the title text not move, get the idea from https://blog.csdn.net/jethai/article/details/52345168*/
+    white-space: nowrap;
+  }
+
+  #nav {
+    width: 40%;
+    margin-top: 2em;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  /*delete the purple effect*/
+  #nav a:visited {
+    color: #ffffff;
+  }
+
+  /*delete the underline effect*/
+  #nav a {
+    text-decoration: none;
+  }
+
+  #sidebar {
+    /*keep it on the screen*/
+    position: fixed;
+    /*push the whole sidebar down*/
+    top: 126px;
+    background-color: #0f4c75;
+    /*flexbox*/
+    display: flex;
+    flex-direction: column;
+    /*font*/
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    /*border*/
+    border-top: 3px solid #1b262c;
+    border-left: 3px solid #1b262c;
+    border-right: 3px solid #1b262c;
+  }
+
+  /*each navigation button*/
+  #sidebar div {
+    width: 250px;
+    border-bottom: 3px solid #1b262c;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  #sidebar div :hover {
+    cursor: pointer;
+  }
+
+  .itemswrapper {
+    /*give space for header and sidebar, learn from youtube*/
+    border-top: 127px solid #3282b8;
+    border-left: 276px solid #3282b8;
+    border-bottom: 50px solid #3282b8;
+    padding: 50px;
+    background-color: #3282b8;
+    /*use flex box model to manage the cards*/
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+  }
+
+  .item {
+    margin: 30px 30px 0 30px;
+    border: 3px solid #1b262c;
+    background-color: #0f4c75;
+    /*use flex box model to manage each card's components*/
+    display: flex;
+    flex-flow: column;
+    /*set each card's width*/
+    width: 300px;
+  }
+
+  /*title*/
+  .item h1 {
+    /*font*/
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    color: #ffffff;
+    text-align: start;
+    /*box*/
+    margin: 0;
+    padding: 0 0 5px 10px;
+    border-bottom: 3px solid #1b262c;
+  }
+
+  .item img {
+    height: 300px;
+  }
+
+  /*description*/
+  .item p {
+    /*font*/
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.2em;
+    color: #ffffff;
+    text-align: center;
+    /*box*/
+    margin: 0;
+    padding: 10px 10px 10px 0;
+    border-top: 3px solid #1b262c;
+    /*to push the price tag down*/
+    height: 80px;
+  }
+
+  /*price tag*/
+  .item h2 {
+    /*font*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    color: #ffffff;
+    text-align: center;
+    /*box*/
+    margin: 0;
+    padding: 0 10px 10px 0;
+  }
+
+  .filler {
+    width: 300px;
+    margin: 30px 33px 0 33px;
+    padding: 0;
+  }
+
+  footer {
+    background-color: #1b262c;
+    color: #ffffff;
+    /*box*/
+    padding: 30px 30px;
+    /*make its children flex*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #copyright {
+    width: 20%;
+    font-family: 'Roboto', sans-serif
+  }
+
+  #app-wrapper {
+    height: 50px;
+    width: 40%;
+    /*use flex box to manage icons*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .form {
+    border-top: 127px solid #3282b8;
+    border-bottom: 50px solid #3282b8;
+    padding: 50px;
+    background-color: #3282b8;
+    /*set layout*/
+    display: flex;
+    justify-content: center;
+    /*overall font style*/
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+
+  #subscribe {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  /*to hide order number input box*/
+  #hidden {
+    display: none;
+  }
+
+  #subButton {
+    width: 6em;
+    height: 3em;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #subEmail {
+    height: 2.6em;
+    width: 16em;
+    font-family: 'Roboto', sans-serif
+  }
+
+  #contact {
+    width: 50%;
+  }
+
+  /*make lable and input box verticle align*/
+  .inputbox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputbox label,
+  #description {
+    height: 1.8em;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    background-color: #0f4c75;
+    border: 2px solid #1b262c;
+    margin-top: 1em;
+  }
+
+  .inputbox input {
+    height: 2em;
+    padding-left: 0.5em;
+    font-size: 1em;
+  }
+
+  #radio {
+    background-color: #0f4c75;
+    border: 2px solid #1b262c;
+    margin-top: 1em;
+    padding: 0.5em;
+  }
+
+  #content {
+    width: 98.5%;
+    border: 2px solid #1b262c;
+  }
+
+  #signiture {
+    display: none;
+  }
+
+  #button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #submit {
+    background-color: #0f4c75;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    align-self: center;
+  }
+
+  /*for fontawesome*/
+  i {
+    text-align: center;
+    padding: 10px 30px;
+    color: #ffffff;
+  }
 }
 
-body {
-  margin: 0;
-  height: 100%;
-  min-width: 700px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+  html {
+    margin: 0;
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #3282b8;
+  }
+
+  header {
+    width: 100%;
+    height: 20vh;
+    background-color: #1b262c;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #store-name {
+    width: 100%;
+    margin: 4vh 0 4vw;
+    text-align: center;
+    font-size: 1.6em;
+    font-family: 'Shrikhand', cursive;
+    /*force the title text not move, get the idea from https://blog.csdn.net/jethai/article/details/52345168*/
+    white-space: nowrap;
+  }
+
+  #nav {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #nav div {
+    margin-right: 8vw;
+    margin-bottom: 4vw;
+  }
+
+  /*delete the purple effect*/
+  #nav a:visited {
+    color: #ffffff;
+  }
+
+  /*delete the underline effect*/
+  #nav a {
+    text-decoration: none;
+  }
+
+  #sidebarNav {
+    width: 100%;
+    top: 17vh;
+    position: fixed;
+  }
+
+  #sidebar {
+    background-color: #0f4c75;
+    /*flex box*/
+    display: flex;
+    flex-direction: column;
+    /*font*/
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    border-bottom: 3px solid #1b262c;
+  }  
+   
+  /*each navigation button*/
+  #sidebar div {
+    width: vmax;
+    height: 3.8vh;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1em;
+    border-top: 3px solid #1b262c;
+    border-left: 3px solid #1b262c;
+    border-right: 3px solid #1b262c;
+  }
+
+  #sidebar div p {
+    margin: 0 auto;
+    padding-top: 0.5em;
+  }
+  
+  #sidebar div :hover {
+    cursor: pointer;
+  }
+
+  #all {
+    display: none;
+  }
+
+  .itemswrapper {    
+    margin-top: 50vh;
+    /*use flex box model to manage the cards*/
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+  }
+
+  .item {
+    margin: 1.5em auto;
+    border: 3px solid #1b262c;
+    background-color: #0f4c75;
+    /*use flex box model to manage each card's components*/
+    display: flex;
+    flex-flow: column;
+    /*set each card's width*/
+    width: 300px;
+  }
+
+  /*title*/
+  .item h1 {
+    /*font*/
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    color: #ffffff;
+    text-align: start;
+    /*box*/
+    margin: 0;
+    padding: 0 0 5px 10px;
+    border-bottom: 3px solid #1b262c;
+  }
+
+  .item img {
+    height: 300px;
+  }
+
+  /*description*/
+  .item p {
+    /*font*/
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.2em;
+    color: #ffffff;
+    text-align: center;
+    /*box*/
+    margin: 0;
+    padding: 10px 10px 10px 0;
+    border-top: 3px solid #1b262c;
+    /*to push the price tag down*/
+    height: 80px;
+  }
+
+  /*price tag*/
+  .item h2 {
+    /*font*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    color: #ffffff;
+    text-align: center;
+    /*box*/
+    margin: 0;
+    padding: 0 10px 10px 0;
+  }
+
+  footer {
+    background-color: #1b262c;
+    color: #ffffff;
+    /*box*/
+    padding: 1em;
+    /*make its children flex*/
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #copyright {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+
+  #app-wrapper {
+    width: 100%;
+    margin: 5vh 0 3vh 0;
+    /*use flex box to manage icons*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #ffffff;
+  }
+
+  i {
+    color: #ffffff;
+  }
+
+  #subscribe {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #subEmail {
+    height: 2.6em;
+    width: 16em;
+    padding-left: 1em;
+    font-family: 'Roboto', sans-serif
+  }
+
+  #subButton {
+    width: 6em;
+    height: 3em;
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+  .form {
+    border-top: 127px solid #3282b8;
+    border-bottom: 50px solid #3282b8;
+    padding: 50px 0;
+    background-color: #3282b8;
+    /*overall font style*/
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+  }
+  
+  #contact {
+    /*set layout*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /*make lable and input box verticle align*/
+  .inputbox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .inputbox label,
+  #description {
+    height: 1.8em;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    background-color: #0f4c75;
+    border: 2px solid #1b262c;
+    margin-top: 1em;
+  }
+
+  .inputbox input {
+    height: 2em;
+    padding-left: 0.5em;
+    font-size: 1em;
+  }
+
+  #radio {
+    background-color: #0f4c75;
+    border: 2px solid #1b262c;
+    margin-top: 1em;
+    padding: 0.5em;
+  }
+
+  #content {
+    width: 98.5%;
+    border: 2px solid #1b262c;
+  }
+
+  #signiture {
+    display: none;
+  }
+
+  #button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #submit {
+    background-color: #0f4c75;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    align-self: center;
+  }
 }
 
-header {
-  width: 100%;
-  background-color: #1b262c;
-  color: #ffffff;
-  position: fixed;
-  top: 0;
-}
 
-#store-name {
-  padding: 40px;
-  font-size: 2em;
-  font-family: 'Shrikhand', cursive;
-  /*force the title text not move, get the idea from https://blog.csdn.net/jethai/article/details/52345168*/
-  white-space: nowrap;
-}
-
-#sidebar {
-  /*keep it on the screen*/
-  position: fixed;
-  /*push the whole sidebar down*/
-  top: 126px;
-  background-color: #0f4c75;
-  /*flexbox*/
-  display: flex;
-  flex-direction: column;
-  /*font*/
-  font-family: 'Roboto', sans-serif;
-  color: #ffffff;
-  /*border*/
-  border-top: 3px solid #1b262c;
-  border-left: 3px solid #1b262c;
-  border-right: 3px solid #1b262c;
-}
-
-/*each navigation button*/
-#sidebar div {
-  width: 250px;
-  border-bottom: 3px solid #1b262c;
-  padding: 10px;
-  text-align: center;
-  font-size: 1.2em;
-}
-
-#sidebar div :hover {
-  cursor: pointer;
-}
-
-.itemswrapper {
-  /*give space for header and sidebar, learn from youtube*/
-  border-top: 127px solid #3282b8;
-  border-left: 276px solid #3282b8;
-  border-bottom: 50px solid #3282b8;
-  padding: 50px;
-  background-color: #3282b8;
-  /*use flex box model to manage the cards*/
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-around;
-}
-
-.item {
-  margin: 30px 30px 0 30px;
-  border: 3px solid #1b262c;
-  background-color: #0f4c75;
-  /*use flex box model to manage each card's components*/
-  display: flex;
-  flex-flow: column;
-  /*set each card's width*/
-  width: 300px;
-}
-
-/*title*/
-.item h1 {
-  /*font*/
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.5em;
-  color: #ffffff;
-  text-align: start;
-  /*box*/
-  margin: 0;
-  padding: 0 0 5px 10px;
-  border-bottom: 3px solid #1b262c;
-}
-
-.item img {
-  height: 300px;
-}
-
-/*description*/
-.item p {
-  /*font*/
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.2em;
-  color: #ffffff;
-  text-align: center;
-  /*box*/
-  margin: 0;
-  padding: 10px 10px 10px 0;
-  border-top: 3px solid #1b262c;
-  /*to push the price tag down*/
-  height: 80px;
-}
-
-/*price tag*/
-.item h2 {
-  /*font*/
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.3em;
-  color: #ffffff;
-  text-align: center;
-  /*box*/
-  margin: 0;
-  padding: 0 10px 10px 0;
-}
-
-.filler {
-  width: 300px;
-  margin: 30px 33px 0 33px;
-  padding: 0;
-}
-
-footer {
-  background-color: #1b262c;
-  color: #ffffff;
-  /*box*/
-  padding: 30px 30px;
-  /*make its children flex*/
-  display: flex;
-  flex-direction: row;
-}
-
-#copyright {
-  width: 40%;
-}
-
-#app-wrapper {
-  height: 50px;
-  width: 60%;
-  /*use flex box to manage icons*/
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-/*for fontawesome*/
-i {
-  text-align: center;
-  padding: 10px 30px;
-  color: #ffffff;
-}

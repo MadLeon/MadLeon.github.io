@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WEB222 Store</title>
+  <link rel="stylesheet" href="./style.css" type="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Shrikhand&family=Open+Sans+Condensed:ital,wght@1,300&family=Oswald:wght@500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <header>
+    <div id="store-name">
+      LEON'S PRIVATE KITCHEN
+    </div>
+
+    <div id="nav">
+
+      <div id="home">
+        <a href="index.html">HOME</a>
+      </div>
+
+      <div id="contact">CONTACT US</div>
+    </div>
+  </header>
+
+  <div class="form">
+    <form id="contact" action="https://httpbin.org/post" method="POST">
+      <div class="inputbox">
+        <label for="name">Name<span>*</span></label>
+        <input id="name" type="text" name="name" autofocus required autocomplete="name" placeholder="John Smith"
+          minlength="1" tabindex="1">
+      </div>
+
+      <div class="inputbox">
+        <label for="email">Email<span>*</span></label>
+        <input id="email" type="email" name="email" required autocomplete="email" placeholder="username@email.com"
+          tabindex="2">
+      </div>
+
+      <div class="inputbox">
+        <label for="address">Address<span>*</span></label>
+        <input id="address" type="text" name="address" required autocomplete="street-address"
+          placeholder="1750 Finch Avenue East" tabindex="3">
+      </div>
+
+      <div class="inputbox">
+        <label for="city">City<span>*</span></label>
+        <input id="city" name="city" list="cities" required placeholder="Toront" autocomplete="address-level2"
+          tabindex="4">
+        <datalist id="cities">
+          <option value="Toronto">
+          <option value="Vancouver">
+          <option value="Montreal">
+          <option value="Calgary">
+        </datalist>
+      </div>
+
+      <div class="inputbox">
+        <label for="postal">Postal Code<span>*</span></label>
+        <input id="postal" type="text" name="postal" required autocomplete="postal-code" placeholder="A1B 2C3"
+          pattern="[A-Za-z][0-9][A-Za-z][ ]?[0-9][A-Za-z][0-9]" tabindex="5">
+      </div>
+
+      <div id="radio">
+        <div>
+          <input type="radio" id="question" name="type" value="question" checked tabindex="6">
+          <label for="question">Question</label>
+        </div>
+
+        <div>
+          <input type="radio" id="comment" name="type" value="comment" tabindex="7">
+          <label for="comment">Comment</label>
+        </div>
+
+        <div>
+          <input type="radio" id="order" name="type" value="order" tabindex="8">
+          <label for="order">Order Problem</label>
+        </div>
+      </div>
+
+      <!--dynamic element-->
+      <div id="hidden" class="inputbox">
+        <label for="order-number">Order Number</label>
+        <input id="order-number" type="number" name="order-number" placeholder="12345678" tabindex="9">
+      </div>
+
+      <div class="inputbox">
+        <label id="description" for="content">Description</label>
+        <textarea name="content" id="content" cols="30" rows="10" tabindex="10"></textarea>
+      </div>
+
+      <!--hidden input box-->
+      <div id="signiture">
+        <input value="Leon Liu">
+      </div>
+
+      <div id="button-wrapper">
+        <button id="submit" type="submit">Submit</button>
+      </div>
+
+    </form>
+  </div>
+
+  <footer>
+    <div id="copyright">
+      <p>All rights reserved <br> &copy; 2020. Leon Liu </p>
+    </div>
+
+    <div id="app-wrapper">
+      <a href="http://Facebook.com" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+      <a href="http://twitter.com" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+      <a href="http://instagram.com" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+      <a href="http://wechat.com" target="_blank"><i class="fa fa-weixin fa-2x" aria-hidden="true"></i></a>
+    </div>
+
+    <form id="subscribe" action="https://formspree.io/xeqrdrvr" method="post">
+      <input id="subEmail" type="email" name="email" pattern="[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}"
+        autocomplete="email" placeholder="username@email.com" required>
+      <button id="subButton" type="submit">Subscribe</button>
+    </form>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+
+</html>
